@@ -30,7 +30,6 @@ class OpenSeaAuctionScraper:
       else:
         self.save_scrape()
 
-
   def save_scrape(self):
     bidders = self.remove_duplicates(self.bidders)
     with open(self.file_name, "wb") as fp:
